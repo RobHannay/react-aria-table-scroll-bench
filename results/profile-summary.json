@@ -1,0 +1,1437 @@
+{
+ "meta": {
+  "chrome": "155.0.8059.39",
+  "cpu": "Apple M4 Max",
+  "cores": 16,
+  "arms": [
+   "baseline",
+   "memo",
+   "fix",
+   "memo-fix"
+  ],
+  "runs": 6,
+  "regions": [
+   "fresh",
+   "revisited"
+  ],
+  "cpuThrottle": 4,
+  "samplingIntervalUs": 100,
+  "startedAt": "2026-10-12T15:16:57.899Z",
+  "loadAtStart": [
+   7.62841796875,
+   12.38232421875,
+   10.83203125
+  ],
+  "finishedAt": "2026-10-12T15:25:34.165Z"
+ },
+ "conditions": {
+  "baseline/fresh": {
+   "n": {
+    "clean": 6,
+    "profiled": 6
+   },
+   "clean": {
+    "longFramePct": 78.83495145631068,
+    "longFramePctRange": [
+     76.92307692307692,
+     83
+    ],
+    "longFramePctEarly": 71.9601677148847,
+    "longFramePctLate": 86.88725490196079,
+    "meanFrameMs": 30.95776213592233,
+    "meanFrameMsEarly": 29.596977638015375,
+    "meanFrameMsLate": 32.17794117647059,
+    "fps": 32.30207647469564,
+    "scriptMsPerSec": 627.1793014111936,
+    "layoutMsPerSec": 75.6153514951815,
+    "styleMsPerSec": 9.485314912317877,
+    "taskMsPerSec": 975.3556904675585
+   },
+   "profiledMetrics": {
+    "longFramePct": 90.39830380130243,
+    "scriptMsPerSec": 627.8071561373736,
+    "layoutMsPerSec": 80.41176548088873,
+    "styleMsPerSec": 10.5785467937577
+   },
+   "buckets": {
+    "forcedLayout": 84.46739280181558,
+    "react": 254.6881422584744,
+    "virtualizerItem": 28.17139674884037,
+    "layout": 68.26610200876358,
+    "virtualizer": 17.508012894359464,
+    "cells": 43.999822662937035,
+    "ariaOther": 119.40283798613348,
+    "other": 11.091549914580064,
+    "gc": 29.366820965427905,
+    "program": 245.35365782330385,
+    "idle": 20.133619090777458,
+    "layoutIfNeededIncl": 143.75340198588873,
+    "virtualizerItemIncl": 56.68616845563851,
+    "virtualizerRenderIncl": 155.20826954584913,
+    "buildFnsSelf": 37.93098317677117,
+    "jsTotal": 541.669283232092,
+    "busy": 898.0568900179203
+   },
+   "halves": {
+    "layoutIfNeededIncl": [
+     102.87362297864433,
+     183.96715093039722
+    ],
+    "buildFnsSelf": [
+     26.64307259598929,
+     49.78793693968345
+    ],
+    "virtualizerItemIncl": [
+     54.70321622770362,
+     58.6691206835734
+    ],
+    "react": [
+     249.65225688095532,
+     259.5707251416444
+    ],
+    "forcedLayout": [
+     79.51892928610496,
+     89.14463750304529
+    ],
+    "program": [
+     223.7093682926087,
+     262.93434827269033
+    ]
+   },
+   "topFunctions": [
+    {
+     "fn": "::(program):-1",
+     "msPerSec": 243.8
+    },
+    {
+     "fn": "react-aria/dist/private/selection/useSelectableCollection::(anonymous):216",
+     "msPerSec": 84.4
+    },
+    {
+     "fn": "react-aria/dist/private/collections/BaseCollection::getItem:148",
+     "msPerSec": 44.8
+    },
+    {
+     "fn": "::(garbage collector):-1",
+     "msPerSec": 31.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::propagateParentContextChanges:2282",
+     "msPerSec": 28
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateProperties:10761",
+     "msPerSec": 19.5
+    },
+    {
+     "fn": "react-aria/dist/private/virtualizer/VirtualizerItem::$6c92e9e346cd7b1c$export$1481e64fbe01b8b3:24",
+     "msPerSec": 19.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateCallback:3922",
+     "msPerSec": 16.9
+    },
+    {
+     "fn": "::(idle):-1",
+     "msPerSec": 16.6
+    },
+    {
+     "fn": "react/cjs/react.production::react_production.createElement:331",
+     "msPerSec": 16.3
+    },
+    {
+     "fn": "react-stately/dist/private/layout/TableLayout::buildRow:268",
+     "msPerSec": 16.3
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateEffect:3876",
+     "msPerSec": 14.6
+    },
+    {
+     "fn": "react-stately/dist/private/layout/ListLayout::buildChild:183",
+     "msPerSec": 14.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setValueForStyles:1059",
+     "msPerSec": 13.5
+    },
+    {
+     "fn": "react-aria-components/dist/private/Table::(anonymous):174",
+     "msPerSec": 12.6
+    },
+    {
+     "fn": "react-stately/dist/private/layout/ListLayout::isValid:178",
+     "msPerSec": 12.1
+    },
+    {
+     "fn": "react-aria/dist/private/utils/mergeProps::$bbaa08b3cd72f041$export$9d1611c77c2fe928:4",
+     "msPerSec": 10.6
+    },
+    {
+     "fn": "react-aria-components/dist/private/Table::(anonymous):162",
+     "msPerSec": 10.3
+    },
+    {
+     "fn": "react-aria/dist/private/interactions/usePress::$d27d541f9569d26d$export$45712eceda6fad21:69",
+     "msPerSec": 10.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitMutationEffectsOnFiber:7475",
+     "msPerSec": 9.9
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setTextContent:1040",
+     "msPerSec": 9
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setProp:10236",
+     "msPerSec": 9
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitHookEffectListUnmount:6402",
+     "msPerSec": 8.9
+    },
+    {
+     "fn": "react-stately/dist/private/layout/TableLayout::buildRowGroup:211",
+     "msPerSec": 8.4
+    },
+    {
+     "fn": "react-stately/dist/private/layout/TableLayout::getRenderedColumnWidth:156",
+     "msPerSec": 8.3
+    }
+   ]
+  },
+  "memo/fresh": {
+   "n": {
+    "clean": 6,
+    "profiled": 6
+   },
+   "clean": {
+    "longFramePct": 80.59405940594058,
+    "longFramePctRange": [
+     79.20792079207921,
+     84.375
+    ],
+    "longFramePctEarly": 72.36937590711176,
+    "longFramePctLate": 88.79166666666666,
+    "meanFrameMs": 31.341247524752475,
+    "meanFrameMsEarly": 30.15798258345428,
+    "meanFrameMsLate": 32.985416666666666,
+    "fps": 31.906834570328666,
+    "scriptMsPerSec": 621.2920453228894,
+    "layoutMsPerSec": 76.22784746680887,
+    "styleMsPerSec": 9.800410510963456,
+    "taskMsPerSec": 989.3862351898294
+   },
+   "profiledMetrics": {
+    "longFramePct": 90.66091954022988,
+    "scriptMsPerSec": 628.1510999952658,
+    "layoutMsPerSec": 80.25866478040942,
+    "styleMsPerSec": 11.03744718893494
+   },
+   "buckets": {
+    "forcedLayout": 84.2097442946421,
+    "react": 263.07781777174773,
+    "virtualizerItem": 25.342375556781008,
+    "layout": 61.501395726262174,
+    "virtualizer": 19.016673359720087,
+    "cells": 44.10124463765442,
+    "ariaOther": 119.04976699804496,
+    "other": 10.757019916967423,
+    "gc": 25.643684980520575,
+    "program": 241.8334793706419,
+    "idle": 24.8962719504459,
+    "layoutIfNeededIncl": 141.17218932741417,
+    "virtualizerItemIncl": 55.16413644007356,
+    "virtualizerRenderIncl": 153.34317272128146,
+    "buildFnsSelf": 33.70332872682829,
+    "jsTotal": 541.7786346610102,
+    "busy": 895.0804041838884
+   },
+   "halves": {
+    "layoutIfNeededIncl": [
+     101.4549548412881,
+     178.9067596589987
+    ],
+    "buildFnsSelf": [
+     21.429476069049837,
+     46.3251003121425
+    ],
+    "virtualizerItemIncl": [
+     52.460419909340395,
+     57.733046876794276
+    ],
+    "react": [
+     254.32378582698067,
+     272.7656424384279
+    ],
+    "forcedLayout": [
+     78.13930376186961,
+     91.1219105152836
+    ],
+    "program": [
+     222.05505953984192,
+     260.6640170480208
+    ]
+   },
+   "topFunctions": [
+    {
+     "fn": "::(program):-1",
+     "msPerSec": 242
+    },
+    {
+     "fn": "react-aria/dist/private/selection/useSelectableCollection::(anonymous):216",
+     "msPerSec": 85.7
+    },
+    {
+     "fn": "react-aria/dist/private/collections/BaseCollection::getItem:148",
+     "msPerSec": 42.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::propagateParentContextChanges:2282",
+     "msPerSec": 27.6
+    },
+    {
+     "fn": "::(garbage collector):-1",
+     "msPerSec": 27
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateProperties:10761",
+     "msPerSec": 21.9
+    },
+    {
+     "fn": "::(idle):-1",
+     "msPerSec": 21.6
+    },
+    {
+     "fn": "react-aria/dist/private/virtualizer/VirtualizerItem::$6c92e9e346cd7b1c$export$1481e64fbe01b8b3:28",
+     "msPerSec": 18.6
+    },
+    {
+     "fn": "react/cjs/react.production::react_production.createElement:331",
+     "msPerSec": 17.4
+    },
+    {
+     "fn": "react-stately/dist/private/layout/ListLayout::isValid:178",
+     "msPerSec": 15.8
+    },
+    {
+     "fn": "react-stately/dist/private/layout/TableLayout::buildRow:268",
+     "msPerSec": 15.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateCallback:3922",
+     "msPerSec": 15.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateEffect:3876",
+     "msPerSec": 14.9
+    },
+    {
+     "fn": "react-aria-components/dist/private/Table::(anonymous):174",
+     "msPerSec": 14.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setValueForStyles:1059",
+     "msPerSec": 12.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitMutationEffectsOnFiber:7475",
+     "msPerSec": 11.5
+    },
+    {
+     "fn": "react-aria/dist/private/utils/mergeProps::$bbaa08b3cd72f041$export$9d1611c77c2fe928:4",
+     "msPerSec": 11.2
+    },
+    {
+     "fn": "react-aria/dist/private/interactions/usePress::$d27d541f9569d26d$export$45712eceda6fad21:69",
+     "msPerSec": 10.5
+    },
+    {
+     "fn": "react-aria-components/dist/private/Table::(anonymous):162",
+     "msPerSec": 9.6
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setTextContent:1040",
+     "msPerSec": 9.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitHookEffectListUnmount:6402",
+     "msPerSec": 9.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setProp:10236",
+     "msPerSec": 8.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitLayoutEffectOnFiber:7046",
+     "msPerSec": 8.4
+    },
+    {
+     "fn": "react-stately/dist/private/layout/TableLayout::getRenderedColumnWidth:156",
+     "msPerSec": 8.4
+    },
+    {
+     "fn": "react-stately/dist/private/layout/TableLayout::buildRowGroup:211",
+     "msPerSec": 8.2
+    }
+   ]
+  },
+  "fix/fresh": {
+   "n": {
+    "clean": 6,
+    "profiled": 6
+   },
+   "clean": {
+    "longFramePct": 42.64354066985646,
+    "longFramePctRange": [
+     37.956204379562045,
+     49.59349593495935
+    ],
+    "longFramePctEarly": 51.271186440677965,
+    "longFramePctLate": 36.17706237424547,
+    "meanFrameMs": 23.773168717247664,
+    "meanFrameMsEarly": 25.341803278688527,
+    "meanFrameMsLate": 22.694758551307842,
+    "fps": 42.064228454092884,
+    "scriptMsPerSec": 571.3737754093836,
+    "layoutMsPerSec": 77.98636933138016,
+    "styleMsPerSec": 11.080301149411655,
+    "taskMsPerSec": 971.2302251176594
+   },
+   "profiledMetrics": {
+    "longFramePct": 61.476761619190405,
+    "scriptMsPerSec": 571.8435810671128,
+    "layoutMsPerSec": 82.61258311654314,
+    "styleMsPerSec": 11.661666585417574
+   },
+   "buckets": {
+    "forcedLayout": 88.94624586565627,
+    "react": 285.990684802248,
+    "virtualizerItem": 18.854842293696464,
+    "layout": 18.05263359435796,
+    "virtualizer": 21.320951670214765,
+    "cells": 27.44991473071097,
+    "ariaOther": 111.93037692831251,
+    "other": 11.677956146271615,
+    "gc": 21.71619133574957,
+    "program": 287.72964823540235,
+    "idle": 27.110463161862796,
+    "layoutIfNeededIncl": 66.61237926435672,
+    "virtualizerItemIncl": 59.85975533706247,
+    "virtualizerRenderIncl": 82.19442206664115,
+    "buildFnsSelf": 14.728154572593496,
+    "jsTotal": 495.6173258992518,
+    "busy": 894.2395449186693
+   },
+   "halves": {
+    "layoutIfNeededIncl": [
+     54.574583115433725,
+     78.65017541327973
+    ],
+    "buildFnsSelf": [
+     9.220579503540684,
+     20.025769645454993
+    ],
+    "virtualizerItemIncl": [
+     55.1695287894495,
+     65.04824397314464
+    ],
+    "react": [
+     270.3663660470368,
+     303.8843503534091
+    ],
+    "forcedLayout": [
+     82.59525234990517,
+     95.57720530643948
+    ],
+    "program": [
+     255.92514772065687,
+     320.6991342882324
+    ]
+   },
+   "topFunctions": [
+    {
+     "fn": "::(program):-1",
+     "msPerSec": 286.7
+    },
+    {
+     "fn": "react-aria/dist/private/selection/useSelectableCollection::(anonymous):216",
+     "msPerSec": 89.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::propagateParentContextChanges:2282",
+     "msPerSec": 38.7
+    },
+    {
+     "fn": "react-aria/dist/private/collections/BaseCollection::getItem:148",
+     "msPerSec": 28.7
+    },
+    {
+     "fn": "::(idle):-1",
+     "msPerSec": 26.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateProperties:10761",
+     "msPerSec": 22.7
+    },
+    {
+     "fn": "::(garbage collector):-1",
+     "msPerSec": 22.4
+    },
+    {
+     "fn": "react/cjs/react.production::react_production.createElement:331",
+     "msPerSec": 19.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateCallback:3922",
+     "msPerSec": 17.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateEffect:3876",
+     "msPerSec": 16.6
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setValueForStyles:1059",
+     "msPerSec": 15.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitMutationEffectsOnFiber:7475",
+     "msPerSec": 11.1
+    },
+    {
+     "fn": "react-aria-components/dist/private/Table::(anonymous):162",
+     "msPerSec": 11
+    },
+    {
+     "fn": "react-stately/dist/private/layout/TableLayout::buildRowGroup:211",
+     "msPerSec": 11
+    },
+    {
+     "fn": "react-aria/dist/private/interactions/usePress::$d27d541f9569d26d$export$45712eceda6fad21:69",
+     "msPerSec": 10.9
+    },
+    {
+     "fn": "react-aria/dist/private/utils/mergeProps::$bbaa08b3cd72f041$export$9d1611c77c2fe928:4",
+     "msPerSec": 10.9
+    },
+    {
+     "fn": "react-aria/dist/private/virtualizer/VirtualizerItem::$6c92e9e346cd7b1c$export$6796df8ba7398521:3",
+     "msPerSec": 9.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setTextContent:1040",
+     "msPerSec": 8.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setProp:10236",
+     "msPerSec": 8.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitHookEffectListUnmount:6402",
+     "msPerSec": 8.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateInsertionEffect:3897",
+     "msPerSec": 7.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitLayoutEffectOnFiber:7046",
+     "msPerSec": 7.3
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateForwardRef:4686",
+     "msPerSec": 7.3
+    },
+    {
+     "fn": "react-aria/dist/private/virtualizer/VirtualizerItem::$6c92e9e346cd7b1c$export$1481e64fbe01b8b3:24",
+     "msPerSec": 7
+    },
+    {
+     "fn": "react-stately/dist/private/virtualizer/Virtualizer::updateSubviews:121",
+     "msPerSec": 6.7
+    }
+   ]
+  },
+  "memo-fix/fresh": {
+   "n": {
+    "clean": 6,
+    "profiled": 6
+   },
+   "clean": {
+    "longFramePct": 9.918395103706223,
+    "longFramePctRange": [
+     7.428571428571429,
+     19.10828025477707
+    ],
+    "longFramePctEarly": 13.28397212543554,
+    "longFramePctLate": 8.15018315018315,
+    "meanFrameMs": 18.31876232573954,
+    "meanFrameMsEarly": 18.879863530778163,
+    "meanFrameMsLate": 18.0239010989011,
+    "fps": 54.588840786198105,
+    "scriptMsPerSec": 511.92936305422586,
+    "layoutMsPerSec": 79.86921833360701,
+    "styleMsPerSec": 11.344118506113908,
+    "taskMsPerSec": 967.1695671506022
+   },
+   "profiledMetrics": {
+    "longFramePct": 35.40362953692115,
+    "scriptMsPerSec": 528.2988943199044,
+    "layoutMsPerSec": 85.01587209676882,
+    "styleMsPerSec": 11.710051609466278
+   },
+   "buckets": {
+    "forcedLayout": 91.72765097217106,
+    "react": 247.0266856322442,
+    "virtualizerItem": 9.031531063761111,
+    "layout": 21.304279995270598,
+    "virtualizer": 25.530416975949688,
+    "cells": 26.89625414592139,
+    "ariaOther": 119.57683011916001,
+    "other": 12.518836178241202,
+    "gc": 15.854189523999443,
+    "program": 319.54976957961844,
+    "idle": 32.21850284754973,
+    "layoutIfNeededIncl": 78.76157711247835,
+    "virtualizerItemIncl": 22.152172302469076,
+    "virtualizerRenderIncl": 97.51163251072282,
+    "buildFnsSelf": 16.654047554186263,
+    "jsTotal": 462.3832865282782,
+    "busy": 889.6761700602938
+   },
+   "halves": {
+    "layoutIfNeededIncl": [
+     66.91432052016657,
+     89.80921363781012
+    ],
+    "buildFnsSelf": [
+     10.826582157802289,
+     22.563151667686014
+    ],
+    "virtualizerItemIncl": [
+     20.562034367537095,
+     23.787760386014178
+    ],
+    "react": [
+     235.2363886755927,
+     258.43546205043316
+    ],
+    "forcedLayout": [
+     84.28203344727973,
+     98.69842594558688
+    ],
+    "program": [
+     285.54552343312207,
+     353.4306676704076
+    ]
+   },
+   "topFunctions": [
+    {
+     "fn": "::(program):-1",
+     "msPerSec": 320.6
+    },
+    {
+     "fn": "react-aria/dist/private/selection/useSelectableCollection::(anonymous):216",
+     "msPerSec": 91.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::propagateParentContextChanges:2282",
+     "msPerSec": 52.2
+    },
+    {
+     "fn": "react-aria/dist/private/collections/BaseCollection::getItem:148",
+     "msPerSec": 37.9
+    },
+    {
+     "fn": "::(idle):-1",
+     "msPerSec": 31.2
+    },
+    {
+     "fn": "react/cjs/react.production::react_production.createElement:331",
+     "msPerSec": 17.7
+    },
+    {
+     "fn": "::(garbage collector):-1",
+     "msPerSec": 16.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateProperties:10761",
+     "msPerSec": 15.2
+    },
+    {
+     "fn": "react-stately/dist/private/layout/TableLayout::buildRowGroup:211",
+     "msPerSec": 13.8
+    },
+    {
+     "fn": "react-aria/dist/private/utils/mergeProps::$bbaa08b3cd72f041$export$9d1611c77c2fe928:4",
+     "msPerSec": 11.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateCallback:3922",
+     "msPerSec": 11.6
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateEffect:3876",
+     "msPerSec": 11.3
+    },
+    {
+     "fn": "react-aria/dist/private/interactions/usePress::$d27d541f9569d26d$export$45712eceda6fad21:69",
+     "msPerSec": 10.2
+    },
+    {
+     "fn": "react-aria-components/dist/private/Table::(anonymous):162",
+     "msPerSec": 9.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setTextContent:1040",
+     "msPerSec": 8.9
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::createWorkInProgress:1893",
+     "msPerSec": 8.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateForwardRef:4686",
+     "msPerSec": 8.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitMutationEffectsOnFiber:7475",
+     "msPerSec": 7.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::workLoopSync:8954",
+     "msPerSec": 7.6
+    },
+    {
+     "fn": "react-stately/dist/private/virtualizer/Virtualizer::updateSubviews:121",
+     "msPerSec": 7.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setValueForStyles:1059",
+     "msPerSec": 7.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::beginWork:5557",
+     "msPerSec": 6.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitHookEffectListUnmount:6402",
+     "msPerSec": 6
+    },
+    {
+     "fn": "react-aria/dist/private/utils/useId::$390e54f620492c70$export$f680877a34711e37:10",
+     "msPerSec": 5.8
+    },
+    {
+     "fn": "::setAttribute:-1",
+     "msPerSec": 5.7
+    }
+   ]
+  },
+  "baseline/revisited": {
+   "n": {
+    "clean": 6,
+    "profiled": 6
+   },
+   "clean": {
+    "longFramePct": 19.636363636363637,
+    "longFramePctRange": [
+     11.904761904761905,
+     50.806451612903224
+    ],
+    "longFramePctEarly": 21.416666666666664,
+    "longFramePctLate": 17.96078431372549,
+    "meanFrameMs": 19.93887878787879,
+    "meanFrameMsEarly": 20.235916666666668,
+    "meanFrameMsLate": 19.659882352941178,
+    "fps": 50.153271437103996,
+    "scriptMsPerSec": 517.9334815684401,
+    "layoutMsPerSec": 83.44064046831795,
+    "styleMsPerSec": 10.935503969474258,
+    "taskMsPerSec": 967.4878189368196
+   },
+   "profiledMetrics": {
+    "longFramePct": 36.260504201680675,
+    "scriptMsPerSec": 523.7301586125467,
+    "layoutMsPerSec": 85.83793399438647,
+    "styleMsPerSec": 11.262227901463593
+   },
+   "buckets": {
+    "forcedLayout": 89.13856904676831,
+    "react": 293.49266979339166,
+    "virtualizerItem": 31.60494637632452,
+    "layout": 1.9853451573246899,
+    "virtualizer": 22.066481925509017,
+    "cells": 12.848671230389398,
+    "ariaOther": 64.93654732338513,
+    "other": 10.109599329215015,
+    "gc": 13.728339247799399,
+    "program": 309.913491245841,
+    "idle": 26.19120164825558,
+    "layoutIfNeededIncl": 0.07670450148523564,
+    "virtualizerItemIncl": 65.39187126195928,
+    "virtualizerRenderIncl": 15.96544934404968,
+    "buildFnsSelf": 0,
+    "jsTotal": 435.3458303204353,
+    "busy": 853.2929963353197
+   },
+   "halves": {
+    "layoutIfNeededIncl": [
+     0.01892117411832059,
+     0.07277911070126174
+    ],
+    "buildFnsSelf": [
+     0,
+     0
+    ],
+    "virtualizerItemIncl": [
+     59.62383158657118,
+     69.56410184957666
+    ],
+    "react": [
+     252.35026419151063,
+     332.0627227573685
+    ],
+    "forcedLayout": [
+     77.70886533574976,
+     100.16942770366893
+    ],
+    "program": [
+     265.3656302231054,
+     354.82232945402245
+    ]
+   },
+   "topFunctions": [
+    {
+     "fn": "::(program):-1",
+     "msPerSec": 311.1
+    },
+    {
+     "fn": "react-aria/dist/private/selection/useSelectableCollection::(anonymous):216",
+     "msPerSec": 89.9
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::propagateParentContextChanges:2282",
+     "msPerSec": 42.2
+    },
+    {
+     "fn": "react-aria/dist/private/virtualizer/VirtualizerItem::$6c92e9e346cd7b1c$export$6796df8ba7398521:3",
+     "msPerSec": 24.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateProperties:10761",
+     "msPerSec": 23.9
+    },
+    {
+     "fn": "::(idle):-1",
+     "msPerSec": 23.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateCallback:3922",
+     "msPerSec": 17.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setValueForStyles:1059",
+     "msPerSec": 16.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateEffect:3876",
+     "msPerSec": 15.4
+    },
+    {
+     "fn": "react/cjs/react.production::react_production.createElement:331",
+     "msPerSec": 14.7
+    },
+    {
+     "fn": "::(garbage collector):-1",
+     "msPerSec": 14.4
+    },
+    {
+     "fn": "react-stately/dist/private/virtualizer/Virtualizer::updateSubviews:121",
+     "msPerSec": 11
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setProp:10236",
+     "msPerSec": 10.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitMutationEffectsOnFiber:7475",
+     "msPerSec": 10.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setTextContent:1040",
+     "msPerSec": 9.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::workLoopSync:8954",
+     "msPerSec": 8.7
+    },
+    {
+     "fn": "react-aria/dist/private/interactions/usePress::$d27d541f9569d26d$export$45712eceda6fad21:69",
+     "msPerSec": 8.6
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitHookEffectListUnmount:6402",
+     "msPerSec": 8.4
+    },
+    {
+     "fn": "react-aria/dist/private/utils/mergeProps::$bbaa08b3cd72f041$export$9d1611c77c2fe928:4",
+     "msPerSec": 8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateInsertionEffect:3897",
+     "msPerSec": 7.9
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitLayoutEffectOnFiber:7046",
+     "msPerSec": 7.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateForwardRef:4686",
+     "msPerSec": 7.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateSlot:2714",
+     "msPerSec": 6.9
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::beginWork:5557",
+     "msPerSec": 6.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateRef:3849",
+     "msPerSec": 6.2
+    }
+   ]
+  },
+  "memo/revisited": {
+   "n": {
+    "clean": 6,
+    "profiled": 6
+   },
+   "clean": {
+    "longFramePct": 1.3513513513513513,
+    "longFramePctRange": [
+     1.0810810810810811,
+     2.7027027027027026
+    ],
+    "longFramePctEarly": 1.6365355075032495,
+    "longFramePctLate": 1.6188714153561516,
+    "meanFrameMs": 16.891621621621624,
+    "meanFrameMsEarly": 16.938514711095358,
+    "meanFrameMsLate": 16.936482423681777,
+    "fps": 59.20094721515543,
+    "scriptMsPerSec": 385.3939948297388,
+    "layoutMsPerSec": 85.1367829128189,
+    "styleMsPerSec": 12.733725694048921,
+    "taskMsPerSec": 873.1295861018575
+   },
+   "profiledMetrics": {
+    "longFramePct": 1.6304347826086956,
+    "scriptMsPerSec": 422.78321645157405,
+    "layoutMsPerSec": 90.06379742216797,
+    "styleMsPerSec": 13.807981806943532
+   },
+   "buckets": {
+    "forcedLayout": 92.3947023629625,
+    "react": 242.78371912725612,
+    "virtualizerItem": 7.770448588905668,
+    "layout": 2.8744335580282994,
+    "virtualizer": 25.739670990693703,
+    "cells": 12.030990688174768,
+    "ariaOther": 61.70807755609844,
+    "other": 11.20878274487584,
+    "gc": 12.773680097897778,
+    "program": 362.2889544436057,
+    "idle": 49.03273253399885,
+    "layoutIfNeededIncl": 0.20855796903978657,
+    "virtualizerItemIncl": 11.192101656585288,
+    "virtualizerRenderIncl": 20.855380567128417,
+    "buildFnsSelf": 0,
+    "jsTotal": 366.0968042330432,
+    "busy": 834.1998427572665
+   },
+   "halves": {
+    "layoutIfNeededIncl": [
+     0.1360616873203077,
+     0.02333836917446489
+    ],
+    "buildFnsSelf": [
+     0,
+     0
+    ],
+    "virtualizerItemIncl": [
+     9.559207919423852,
+     12.085302680201645
+    ],
+    "react": [
+     210.4278627068417,
+     272.83047560991815
+    ],
+    "forcedLayout": [
+     79.90645239006173,
+     104.44747118547957
+    ],
+    "program": [
+     302.96067383819053,
+     410.7516034513303
+    ]
+   },
+   "topFunctions": [
+    {
+     "fn": "::(program):-1",
+     "msPerSec": 360
+    },
+    {
+     "fn": "react-aria/dist/private/selection/useSelectableCollection::(anonymous):216",
+     "msPerSec": 93.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::propagateParentContextChanges:2282",
+     "msPerSec": 64.2
+    },
+    {
+     "fn": "::(idle):-1",
+     "msPerSec": 45.6
+    },
+    {
+     "fn": "react/cjs/react.production::react_production.createElement:331",
+     "msPerSec": 16
+    },
+    {
+     "fn": "::(garbage collector):-1",
+     "msPerSec": 12.6
+    },
+    {
+     "fn": "react-stately/dist/private/virtualizer/Virtualizer::updateSubviews:121",
+     "msPerSec": 12.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateProperties:10761",
+     "msPerSec": 12.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateCallback:3922",
+     "msPerSec": 10.3
+    },
+    {
+     "fn": "react-aria/dist/private/utils/mergeProps::$bbaa08b3cd72f041$export$9d1611c77c2fe928:4",
+     "msPerSec": 10.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setTextContent:1040",
+     "msPerSec": 9.7
+    },
+    {
+     "fn": "react-aria/dist/private/interactions/usePress::$d27d541f9569d26d$export$45712eceda6fad21:69",
+     "msPerSec": 9
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateEffect:3876",
+     "msPerSec": 8.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::beginWork:5557",
+     "msPerSec": 7.9
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateForwardRef:4686",
+     "msPerSec": 7.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateSlot:2714",
+     "msPerSec": 7.6
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::workLoopSync:8954",
+     "msPerSec": 6.3
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitMutationEffectsOnFiber:7475",
+     "msPerSec": 6.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitHookEffectListUnmount:6402",
+     "msPerSec": 5.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::attemptEarlyBailoutIfNoScheduledUpdate:5467",
+     "msPerSec": 5.2
+    },
+    {
+     "fn": "react-aria-components/dist/private/Table::(anonymous):934",
+     "msPerSec": 5.1
+    },
+    {
+     "fn": "react-aria-components/dist/private/utils::$7230ffa83bc0c2cf$var$DOMElement:107",
+     "msPerSec": 4.5
+    },
+    {
+     "fn": "react-aria/dist/private/utils/useId::$390e54f620492c70$export$f680877a34711e37:10",
+     "msPerSec": 4.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setValueForStyles:1059",
+     "msPerSec": 4.3
+    },
+    {
+     "fn": "react-aria/dist/private/selection/useSelectableItem::$f6ba6936bfd098a0$export$ecf600387e221c37:13",
+     "msPerSec": 4.2
+    }
+   ]
+  },
+  "fix/revisited": {
+   "n": {
+    "clean": 6,
+    "profiled": 6
+   },
+   "clean": {
+    "longFramePct": 19.78896103896104,
+    "longFramePctRange": [
+     16.875,
+     28.767123287671232
+    ],
+    "longFramePctEarly": 23.705627705627705,
+    "longFramePctLate": 17.518362244100643,
+    "meanFrameMs": 19.963652597402596,
+    "meanFrameMsEarly": 20.61737662337662,
+    "meanFrameMsLate": 19.584927332395687,
+    "fps": 50.091033948873,
+    "scriptMsPerSec": 524.7760226732621,
+    "layoutMsPerSec": 78.90863122818217,
+    "styleMsPerSec": 10.876218339337392,
+    "taskMsPerSec": 970.2860829488368
+   },
+   "profiledMetrics": {
+    "longFramePct": 38.888888888888886,
+    "scriptMsPerSec": 528.1310328569954,
+    "layoutMsPerSec": 84.61511456505318,
+    "styleMsPerSec": 11.087394940511327
+   },
+   "buckets": {
+    "forcedLayout": 80.39005719483413,
+    "react": 267.88381832384067,
+    "virtualizerItem": 34.52293533464909,
+    "layout": 2.3548486141136884,
+    "virtualizer": 22.059245931785753,
+    "cells": 10.704245859359368,
+    "ariaOther": 60.916192895542565,
+    "other": 9.580828397808796,
+    "gc": 14.823428714007022,
+    "program": 281.8249398927554,
+    "idle": 26.09757832593838,
+    "layoutIfNeededIncl": 0.15563194393408766,
+    "virtualizerItemIncl": 66.17195764427007,
+    "virtualizerRenderIncl": 15.777886684064704,
+    "buildFnsSelf": 0,
+    "jsTotal": 409.19228046810986,
+    "busy": 788.0567352714252
+   },
+   "halves": {
+    "layoutIfNeededIncl": [
+     0.27687493076485814,
+     0
+    ],
+    "buildFnsSelf": [
+     0,
+     0
+    ],
+    "virtualizerItemIncl": [
+     51.5065035941888,
+     78.9758916093505
+    ],
+    "react": [
+     209.77189575291052,
+     325.5632253770691
+    ],
+    "forcedLayout": [
+     67.54168647987115,
+     93.52573882185096
+    ],
+    "program": [
+     213.42045114878482,
+     351.7082579035008
+    ]
+   },
+   "topFunctions": [
+    {
+     "fn": "::(program):-1",
+     "msPerSec": 283.6
+    },
+    {
+     "fn": "react-aria/dist/private/selection/useSelectableCollection::(anonymous):216",
+     "msPerSec": 80.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::propagateParentContextChanges:2282",
+     "msPerSec": 42.2
+    },
+    {
+     "fn": "react-aria/dist/private/virtualizer/VirtualizerItem::$6c92e9e346cd7b1c$export$6796df8ba7398521:3",
+     "msPerSec": 33.3
+    },
+    {
+     "fn": "::(idle):-1",
+     "msPerSec": 26.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateProperties:10761",
+     "msPerSec": 20.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setValueForStyles:1059",
+     "msPerSec": 17.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateCallback:3922",
+     "msPerSec": 15.7
+    },
+    {
+     "fn": "::(garbage collector):-1",
+     "msPerSec": 14.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateEffect:3876",
+     "msPerSec": 13.7
+    },
+    {
+     "fn": "react-stately/dist/private/virtualizer/Virtualizer::updateSubviews:121",
+     "msPerSec": 12.3
+    },
+    {
+     "fn": "react/cjs/react.production::react_production.createElement:331",
+     "msPerSec": 10.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setProp:10236",
+     "msPerSec": 9.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitMutationEffectsOnFiber:7475",
+     "msPerSec": 9.4
+    },
+    {
+     "fn": "react-aria/dist/private/interactions/usePress::$d27d541f9569d26d$export$45712eceda6fad21:69",
+     "msPerSec": 8.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setTextContent:1040",
+     "msPerSec": 8.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateInsertionEffect:3897",
+     "msPerSec": 8.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitHookEffectListUnmount:6402",
+     "msPerSec": 8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::workLoopSync:8954",
+     "msPerSec": 7.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateForwardRef:4686",
+     "msPerSec": 7.4
+    },
+    {
+     "fn": "react-aria/dist/private/utils/mergeProps::$bbaa08b3cd72f041$export$9d1611c77c2fe928:4",
+     "msPerSec": 7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitLayoutEffectOnFiber:7046",
+     "msPerSec": 6.8
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::beginWork:5557",
+     "msPerSec": 6.5
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateSlot:2714",
+     "msPerSec": 6.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateFunctionComponent:4922",
+     "msPerSec": 5.9
+    }
+   ]
+  },
+  "memo-fix/revisited": {
+   "n": {
+    "clean": 6,
+    "profiled": 6
+   },
+   "clean": {
+    "longFramePct": 2.1798526966025182,
+    "longFramePctRange": [
+     1.0810810810810811,
+     10
+    ],
+    "longFramePctEarly": 4.444444444444445,
+    "longFramePctLate": 0,
+    "meanFrameMs": 17.028886018056546,
+    "meanFrameMsEarly": 17.406666666666666,
+    "meanFrameMsLate": 16.66559139784946,
+    "fps": 58.72374733964699,
+    "scriptMsPerSec": 406.01948486897993,
+    "layoutMsPerSec": 83.81721527286085,
+    "styleMsPerSec": 12.80856208481686,
+    "taskMsPerSec": 907.6449191598737
+   },
+   "profiledMetrics": {
+    "longFramePct": 4.482317320598058,
+    "scriptMsPerSec": 430.1050559972375,
+    "layoutMsPerSec": 87.14484966176613,
+    "styleMsPerSec": 13.321436153384537
+   },
+   "buckets": {
+    "forcedLayout": 84.9604094989104,
+    "react": 222.52188303257552,
+    "virtualizerItem": 5.011026349512981,
+    "layout": 2.994339953127419,
+    "virtualizer": 25.370994161577727,
+    "cells": 11.255286350287236,
+    "ariaOther": 60.207257485043705,
+    "other": 11.20872614113388,
+    "gc": 13.751788212932034,
+    "program": 339.4005509050307,
+    "idle": 42.209365055681715,
+    "layoutIfNeededIncl": 0,
+    "virtualizerItemIncl": 9.706922437516674,
+    "virtualizerRenderIncl": 20.859287860160556,
+    "buildFnsSelf": 0,
+    "jsTotal": 337.55894860747014,
+    "busy": 781.4378657615749
+   },
+   "halves": {
+    "layoutIfNeededIncl": [
+     0,
+     0
+    ],
+    "buildFnsSelf": [
+     0,
+     0
+    ],
+    "virtualizerItemIncl": [
+     8.457607988689684,
+     11.204486906650828
+    ],
+    "react": [
+     180.0802560049699,
+     266.27241476663244
+    ],
+    "forcedLayout": [
+     70.87071956818568,
+     98.10856248898864
+    ],
+    "program": [
+     268.82447894548704,
+     411.96630887483076
+    ]
+   },
+   "topFunctions": [
+    {
+     "fn": "::(program):-1",
+     "msPerSec": 338.9
+    },
+    {
+     "fn": "react-aria/dist/private/selection/useSelectableCollection::(anonymous):216",
+     "msPerSec": 85.6
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::propagateParentContextChanges:2282",
+     "msPerSec": 59.1
+    },
+    {
+     "fn": "::(idle):-1",
+     "msPerSec": 44.1
+    },
+    {
+     "fn": "::(garbage collector):-1",
+     "msPerSec": 13.4
+    },
+    {
+     "fn": "react/cjs/react.production::react_production.createElement:331",
+     "msPerSec": 13
+    },
+    {
+     "fn": "react-stately/dist/private/virtualizer/Virtualizer::updateSubviews:121",
+     "msPerSec": 11.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateProperties:10761",
+     "msPerSec": 10.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateCallback:3922",
+     "msPerSec": 9.9
+    },
+    {
+     "fn": "react-aria/dist/private/interactions/usePress::$d27d541f9569d26d$export$45712eceda6fad21:69",
+     "msPerSec": 9.2
+    },
+    {
+     "fn": "react-aria/dist/private/utils/mergeProps::$bbaa08b3cd72f041$export$9d1611c77c2fe928:4",
+     "msPerSec": 8.6
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setTextContent:1040",
+     "msPerSec": 8.2
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateForwardRef:4686",
+     "msPerSec": 8.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateEffect:3876",
+     "msPerSec": 7.7
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::beginWork:5557",
+     "msPerSec": 7.6
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitHookEffectListUnmount:6402",
+     "msPerSec": 6.4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitMutationEffectsOnFiber:7475",
+     "msPerSec": 6.3
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::updateSlot:2714",
+     "msPerSec": 6.3
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::workLoopSync:8954",
+     "msPerSec": 5.6
+    },
+    {
+     "fn": "react-aria/dist/private/utils/useId::$390e54f620492c70$export$f680877a34711e37:10",
+     "msPerSec": 5.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::setValueForStyles:1059",
+     "msPerSec": 4.8
+    },
+    {
+     "fn": "react-aria-components/dist/private/utils::$7230ffa83bc0c2cf$var$DOMElement:107",
+     "msPerSec": 4.6
+    },
+    {
+     "fn": "react-aria-components/dist/private/Table::(anonymous):934",
+     "msPerSec": 4.1
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::commitLayoutEffectOnFiber:7046",
+     "msPerSec": 4
+    },
+    {
+     "fn": "react-dom/cjs/react-dom-client.production::reconcileChildFibersImpl:2873",
+     "msPerSec": 3.9
+    }
+   ]
+  }
+ }
+}

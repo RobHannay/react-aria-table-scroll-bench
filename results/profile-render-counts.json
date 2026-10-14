@@ -1,0 +1,66 @@
+[
+ {
+  "region": "fresh",
+  "arm": "baseline-count",
+  "renders": 31392,
+  "frames": 73,
+  "rendersPerFrame": 430.027397260274,
+  "mountedItems": 437
+ },
+ {
+  "region": "fresh",
+  "arm": "memo-count",
+  "renders": 34332,
+  "frames": 83,
+  "rendersPerFrame": 413.6385542168675,
+  "mountedItems": 437
+ },
+ {
+  "region": "fresh",
+  "arm": "fix-count",
+  "renders": 46652,
+  "frames": 108,
+  "rendersPerFrame": 431.962962962963,
+  "mountedItems": 437
+ },
+ {
+  "region": "fresh",
+  "arm": "memo-fix-count",
+  "renders": 12176,
+  "frames": 132,
+  "rendersPerFrame": 92.24242424242425,
+  "mountedItems": 437
+ },
+ {
+  "region": "revisited",
+  "arm": "baseline-count",
+  "renders": 55808,
+  "frames": 128,
+  "rendersPerFrame": 436,
+  "mountedItems": 437
+ },
+ {
+  "region": "revisited",
+  "arm": "memo-count",
+  "renders": 6870,
+  "frames": 163,
+  "rendersPerFrame": 42.147239263803684,
+  "mountedItems": 437
+ },
+ {
+  "region": "revisited",
+  "arm": "fix-count",
+  "renders": 50140,
+  "frames": 116,
+  "rendersPerFrame": 432.2413793103448,
+  "mountedItems": 437
+ },
+ {
+  "region": "revisited",
+  "arm": "memo-fix-count",
+  "renders": 6900,
+  "frames": 153,
+  "rendersPerFrame": 45.09803921568628,
+  "mountedItems": 437
+ }
+]

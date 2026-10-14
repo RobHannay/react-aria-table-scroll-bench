@@ -1,0 +1,20 @@
+import { chromium } from 'playwright-core';
+import { serve } from './serve.mjs';
+const server = await serve();
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await browser.newPage({ viewport: { width: 1500, height: 900 } });
+page.on('console', (m) => console.log('console:', m.text()));
+page.on('pageerror', (e) => console.log('pageerror:', e.message));
+await page.goto(`http://localhost:4789/${process.argv[2] ?? 'baseline-count'}/?cells=realistic&sizing=${process.argv[3] ?? 'fixed'}`);
+await page.waitForFunction(() => window.__ready);
+const info = await page.evaluate(async () => {
+  const t = document.querySelector('[data-testid=table]');
+  const rows = t.querySelectorAll('[role=row]');
+  const r0 = rows[1];
+  const chain = []; let e = r0; for (let i = 0; i < 5 && e; i++, e = e.parentElement) chain.push(`${e.tagName} role=${e.getAttribute('role')} style=${e.getAttribute('style')?.slice(0, 120)}`);
+  const fr = await new Promise((res) => { const ts = []; const f = (t) => { ts.push(t); ts.length < 61 ? requestAnimationFrame(f) : res(ts); }; requestAnimationFrame(f); });
+  const d = fr.slice(1).map((x, i) => x - fr[i]).sort((a, b) => a - b);
+  return { rows: rows.length, cells: t.querySelectorAll('[role=gridcell],[role=rowheader]').length, scrollH: t.scrollHeight, clientH: t.clientHeight, chain, medianFrame: d[30], renders: globalThis.__viRenders, html: t.outerHTML.length };
+});
+console.log(JSON.stringify(info, null, 1));
+await browser.close(); server.close();
